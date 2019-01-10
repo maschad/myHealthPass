@@ -37,7 +37,6 @@ module.exports = {
         "comma-style": "error",
         "complexity": "error",
         "computed-property-spacing": "error",
-        "consistent-return": "error",
         "consistent-this": "error",
         "curly": "error",
         "default-case": "error",

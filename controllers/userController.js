@@ -1,0 +1,8 @@
+exports.checkPasswordComplexity = () => {
+
+}
+
+exports.register = () => {
+
+}
+
