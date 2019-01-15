@@ -2,8 +2,7 @@ const compareHash = () => {
 
 }
 
-exports.authenticateUser = () => {
-
+exports.authenticateUser = (username,password) => {
 }
 
 exports.extendSession = () => {

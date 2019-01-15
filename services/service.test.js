@@ -26,15 +26,22 @@ describe('Service tests', () => {
             })
     })
 
-    it('Should enforce password complexity', () => {
+    it('Should find a user', () => {
+            const username = 'user@gmail.com'
 
+           return service.getUser(username).then((user) => {
+                expect(user).to.equal({
+                    id: 123434,
+                    password: 'password',
+                    username: 'user@gmail.com'
+                })
+           })
     })
 
-    it('Should authenticate user', () => {
+    it('Should fail to find a user', () => {
+        const username = 'wrong'
 
-    })
-
-    it('Should reject user', () => {
-
+        expect(service.getUser(username)).to.be(Error('User not found.'))
+        expect(service.getUser(username)).to.have.status(404)
     })
 })
